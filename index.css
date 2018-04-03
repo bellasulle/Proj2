@@ -1,0 +1,231 @@
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 18px;
+}
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+html, body {
+  font-family: 'IBM Plex Serif';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Serif';
+  line-height: 1.45;
+  color: #fff;
+}
+
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'IBM Plex Serif';
+  color: white;
+}
+
+.header {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px o;
+    height: 400px;
+    text-align: center;   
+}
+
+
+form{
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+form input{
+appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+
+  -webkit-transition-duration: 0.25s;
+transition-duration: 0.25s;
+  font-weight: 300;
+    
+
+}
+
+ input:hover {
+}
+ input:focus {
+  background-color: white;
+  width: 300px;
+  color: #f0c1e7;
+}
+ button {
+    margin-top: 20px; 
+    margin: 5px;
+    appearance: none;
+    background-color: #fff;
+    border: 0;
+    padding: 10px; 15px;
+    color: #f0c1e7;
+    border-radius: 3px;
+    width: 200px;
+    font-size: 18px;
+    transition-duration: 0.25s;  
+}
+ button{
+    text-decoration: none;
+    color: #848484;   
+}
+ button:hover{
+    background-color: rgba(209, 209, 209, 0.23); 
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;   
+}
+
+
+
+.bg {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 300;
+  font-family: 'IBM Plex Serif';
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+
+.bg:after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease-in-out infinite;
+  animation: Gradient 15s ease-in-out infinite;
+  z-index: 2;
+  opacity: 0.3;
+}
+
+.bg:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-size: cover;
+  z-index: 1;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.bg * {
+  z-index: 5;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+}
+::-moz-selection {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #ed4264;
+}
+::selection {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #ed4264;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
